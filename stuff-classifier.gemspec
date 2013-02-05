@@ -17,7 +17,8 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_runtime_dependency "fast-stemmer", ">= 1.0"
-  s.add_runtime_dependency "sqlite3"
+  # Removed to support environments without SQLite (e.g. Heroku)
+  # s.add_runtime_dependency "sqlite3"
   s.add_runtime_dependency "sequel"
   s.add_runtime_dependency "msgpack"
 
